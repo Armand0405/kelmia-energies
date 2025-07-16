@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelmia Énergies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo-kelmia.png" alt="Logo Kelmia Énergies" class="logo">
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#realisations">Réalisations</a>
+            <a href="#contact">Contact</a>
+            <a href="#avis">Avis clients</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-text">
+            <h1>Kelmia Énergies</h1>
+            <p>15 ans d'expérience en électricité générale, pose de panneaux solaires, bornes de recharge et solutions haut de gamme.</p>
+        </div>
+    </section>
+
+    <section id="realisations">
+        <h2>Nos réalisations</h2>
+        <div class="gallery">
+            <img src="chantier1.jpg" alt="Chantier 1">
+            <img src="chantier2.jpg" alt="Chantier 2">
+            <img src="chantier3.jpg" alt="Chantier 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="form-contact">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="tel" name="telephone" placeholder="Votre téléphone (optionnel)">
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="avis">
+        <h2>Vos avis</h2>
+        <form id="avis-form">
+            <input type="text" id="nom" placeholder="Votre nom" required>
+            <input type="number" id="note" placeholder="Note sur 5" min="1" max="5" required>
+            <textarea id="commentaire" placeholder="Votre commentaire" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="liste-avis"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kelmia Énergies - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
