@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.header {
+  background-color: #004b4f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('../images/fond.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.galerie, .avis {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.images img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.avis-liste blockquote {
+  background-color: #eee;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-left: 5px solid #004b4f;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #004b4f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
