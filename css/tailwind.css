@@ -1,0 +1,92 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-[#0A1F44] text-white font-sans">
+      {/* Header */}
+      <header className="px-6 py-8 flex justify-between items-center border-b border-white/10">
+        <h1 className="text-3xl font-semibold text-gold">Kelmia Énergies</h1>
+        <nav className="space-x-6 text-sm">
+          <a href="#services" className="hover:underline">Services</a>
+          <a href="#about" className="hover:underline">À propos</a>
+          <a href="#realisations" className="hover:underline">Réalisations</a>
+          <a href="#contact" className="hover:underline">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="px-6 py-20 text-center bg-gradient-to-b from-[#0A1F44] to-[#081634]">
+        <motion.h2 initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8}} className="text-4xl font-bold mb-4 text-gold">
+          L’énergie d’aujourd’hui, pensée pour demain
+        </motion.h2>
+        <p className="text-lg max-w-2xl mx-auto text-white/80">
+          Installation solaire, électricité générale, bornes de recharge – un savoir-faire fiable et responsable au service de votre habitat.
+        </p>
+        <Button className="mt-6 bg-gold text-[#0A1F44] font-semibold px-6 py-3 rounded-2xl shadow-lg">Demander un devis</Button>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="px-6 py-16 bg-[#0A1F44]">
+        <h3 className="text-3xl font-bold text-center mb-10 text-gold">Nos services</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            { title: "Panneaux solaires", desc: "Étude, fourniture et pose de solutions photovoltaïques performantes." },
+            { title: "Électricité générale", desc: "Installation, rénovation et mise en conformité pour les particuliers et pros." },
+            { title: "Bornes de recharge", desc: "Installation de bornes de recharge pour véhicules électriques (IRVE)." }
+          ].map((s, i) => (
+            <Card key={i} className="bg-white/5 border border-white/10 rounded-2xl">
+              <CardContent className="p-6">
+                <h4 className="text-xl font-semibold text-white mb-2">{s.title}</h4>
+                <p className="text-white/70 text-sm">{s.desc}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* À propos */}
+      <section id="about" className="px-6 py-16 bg-[#081634]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl font-bold mb-6 text-gold">À propos de Kelmia</h3>
+          <p className="text-white/80 text-lg leading-relaxed">
+            Kelmia Énergies est née de la volonté d’offrir une électricité responsable, performante et personnalisée. Inspirée par mes filles, Kelly & Mia, cette entreprise incarne des valeurs de fiabilité, d’avenir, et de confiance familiale. Nous accompagnons chaque client avec une exigence de qualité et un engagement éthique.
+          </p>
+        </div>
+      </section>
+
+      {/* Réalisations */}
+      <section id="realisations" className="px-6 py-16 bg-[#0A1F44]">
+        <h3 className="text-3xl font-bold text-center mb-10 text-gold">Nos réalisations</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+          {[1,2,3].map(i => (
+            <div key={i} className="aspect-square bg-white/10 rounded-xl"></div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="px-6 py-20 bg-[#081634]">
+        <h3 className="text-3xl font-bold text-center mb-10 text-gold">Contact</h3>
+        <div className="max-w-xl mx-auto text-center space-y-4">
+          <p className="flex justify-center items-center gap-2"><Mail className="w-4 h-4 text-gold" /> contact@kelmia-energies.fr</p>
+          <p className="flex justify-center items-center gap-2"><Phone className="w-4 h-4 text-gold" /> 06 00 00 00 00</p>
+          <p className="flex justify-center items-center gap-2"><MapPin className="w-4 h-4 text-gold" /> 123 rue de l’Énergie, 75000 Paris</p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-6 py-6 text-center text-sm text-white/50 bg-[#000814]">
+        © 2025 Kelmia Énergies — Tous droits réservés.
+      </footer>
+    </main>
+  );
+}
+
+const gold = {
+  '--tw-text-opacity': '1',
+  color: 'rgb(212 175 55 / var(--tw-text-opacity))'
+};
