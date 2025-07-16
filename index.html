@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelmia Énergies</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelmia Énergies</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Kelmia Énergies</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="avis.html">Avis clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <img src="logo.png" alt="Logo Kelmia Énergies" class="logo">
+        <h1>Kelmia Énergies</h1>
+        <nav>
+            <a href="#contact">Contact</a>
+            <a href="#realisations">Réalisations</a>
+            <a href="#avis">Avis Clients</a>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="overlay">
-      <h2>Spécialiste des énergies et rénovations durables</h2>
-      <p>Chantiers responsables, qualité et transparence</p>
-    </div>
-  </section>
+    <section class="hero">
+        <h2>Électricité générale, panneaux solaires, bornes de recharge</h2>
+        <p>15 ans d’expérience, matériel haut de gamme, service sur-mesure.</p>
+    </section>
 
-  <section class="galerie">
-    <h2>Galerie de réalisations</h2>
-    <div class="images">
-      <img src="images/chantier1.jpg" alt="Chantier 1" />
-      <img src="images/chantier2.jpg" alt="Chantier 2" />
-      <img src="images/chantier3.jpg" alt="Chantier 3" />
-    </div>
-    <a href="realisations.html" class="btn">Voir toutes les réalisations</a>
-  </section>
+    <section id="realisations">
+        <h2>Nos réalisations</h2>
+        <div class="gallery">
+            <img src="chantier1.jpg" alt="Chantier 1">
+            <img src="chantier2.jpg" alt="Chantier 2">
+            <img src="chantier3.jpg" alt="Chantier 3">
+        </div>
+    </section>
 
-  <section class="avis">
-    <h2>Avis clients</h2>
-    <div class="avis-liste">
-      <blockquote>
-        <p>“Travail sérieux et respectueux, je recommande à 100%.”</p>
-        <footer>– Marie L.</footer>
-      </blockquote>
-      <blockquote>
-        <p>“Excellent accompagnement et finitions impeccables.”</p>
-        <footer>– David P.</footer>
-      </blockquote>
-    </div>
-    <a href="avis.html" class="btn">Lire plus d’avis ou laisser le vôtre</a>
-  </section>
+    <section id="avis">
+        <h2>Avis Clients</h2>
+        <div class="avis-box">
+            <p><strong>Jean D. :</strong> Travail impeccable, je recommande !</p>
+            <p><strong>Sophie L. :</strong> Très professionnel et à l’écoute.</p>
+        </div>
+        <p>Pour laisser un avis, contactez-nous par mail.</p>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Kelmia Énergies – Tous droits réservés</p>
-  </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Armand Poupeau</strong><br>
+        Téléphone : 06 00 00 00 00<br>
+        Email : armandpoupeau17@gmail.com<br>
+        Zone : Deux-Sèvres, Vienne, Charente</p>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kelmia Énergies - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
