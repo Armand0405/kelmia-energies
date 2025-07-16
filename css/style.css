@@ -1,62 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0a0f2c;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
-header {
-    background-color: #020617;
-    padding: 20px;
-    text-align: center;
+
+.header {
+  background-color: #004b4f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo {
-    max-height: 80px;
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
-nav a {
-    margin: 0 10px;
-    color: #ffd700;
-    text-decoration: none;
+
+.header a {
+  color: white;
+  text-decoration: none;
 }
+
 .hero {
-    padding: 40px;
-    text-align: center;
-    background-image: url('fond.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url('../images/fond.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
 }
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-.gallery img {
-    width: 30%;
-    border-radius: 10px;
+
+.galerie, .avis {
+  padding: 3rem 2rem;
+  text-align: center;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    max-width: 400px;
-    margin: auto;
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
-input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+
+.images img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-button {
-    background-color: #ffd700;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+
+.avis-liste blockquote {
+  background-color: #eee;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-left: 5px solid #004b4f;
 }
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #020617;
-    margin-top: 40px;
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #004b4f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
