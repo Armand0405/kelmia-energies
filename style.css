@@ -16,10 +16,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .logo {
-  height: 120px;
+  max-widht: 220px;
+  height: auto;
 }
 
 nav a {
