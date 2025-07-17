@@ -2,100 +2,141 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kelmia Énergies</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      max-width: 180px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: gold;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      font-size: 1.2em;
+      line-height: 1.7em;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 60px;
+      color: gold;
+      font-size: 2em;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      border: 2px solid gold;
+    }
+
+    .avis {
+      background-color: rgba(255, 215, 0, 0.1);
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .avis blockquote {
+      font-style: italic;
+      margin: 15px 0;
+      border-left: 3px solid gold;
+      padding-left: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      margin-top: 50px;
+      color: #ccc;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="logo-container">
-      <img src="logo-kelmia.png" alt="Logo Kelmia Énergies" class="logo" />
-    </div>
-    <nav>
-      <a href="#services">Nos Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#avis">Avis clients</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="logo-kelmia.png" alt="Logo Kelmia Énergies" />
+    <h1>Kelmia Énergies</h1>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Bienvenue chez Kelmia Énergies</h1>
-      <p>
-        Fort de plus de 15 ans d'expérience, Kelmia Énergies est votre spécialiste
-        en électricité générale, installations de panneaux solaires et bornes de recharge
-        pour véhicules électriques. Nous intervenons avec du matériel haut de gamme,
-        une expertise de confiance et un accompagnement sur mesure.
-      </p>
-    </section>
+  <section class="intro">
+    <p>
+      Bienvenue chez <strong>Kelmia Énergies</strong>, votre partenaire de confiance dans le domaine de l'électricité générale, 
+      de l’installation de panneaux solaires, de bornes de recharge pour véhicules électriques, et bien plus encore.
+      Forts de plus de <strong>15 ans d’expérience</strong>, nous mettons à votre service notre savoir-faire et notre passion pour les énergies renouvelables. 
+      Nous utilisons exclusivement du <strong>matériel haut de gamme</strong> pour garantir des installations fiables, durables et esthétiques.
+      Basés en Vendée, nous intervenons principalement sur des maisons individuelles et mettons un point d'honneur à offrir un service de qualité, 
+      personnalisé et humain.
+    </p>
+    <p><strong>Contactez-nous au 07 69 03 82 64</strong> pour un devis gratuit ou toute demande d'information.</p>
+  </section>
 
-    <section id="services" class="services">
-      <h2>Nos Services</h2>
+  <h2 class="section-title">Réalisations</h2>
+  <section class="gallery">
+    <img src="chantier1.jpg" alt="Installation 1">
+    <img src="chantier2.jpg" alt="Installation 2">
+    <img src="chantier3.jpg" alt="Installation 3">
+  </section>
 
-      <div class="service">
-        <h3>⚡ Électricité générale</h3>
-        <p>
-          Nous réalisons tous vos travaux d’électricité pour le neuf et la rénovation :
-          installation de tableaux électriques, mise aux normes, éclairage intérieur et extérieur,
-          dépannage, domotique et plus encore. Travail soigné et matériel certifié.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🔋 Panneaux solaires photovoltaïques</h3>
-        <p>
-          Profitez de l’énergie solaire avec nos installations de panneaux photovoltaïques sur toiture.
-          Nous vous accompagnons de l’étude à la pose en passant par le dimensionnement.
-          Rentabilité, économie d’énergie, et respect de l’environnement garantis.
-        </p>
-      </div>
-
-      <div class="service">
-        <h3>🚗 Bornes de recharge pour véhicules électriques</h3>
-        <p>
-          Nous installons des bornes de recharge à domicile ou en entreprise. Nos solutions
-          s’adaptent à tous les véhicules électriques et hybrides. Certification IRVE,
-          installation sécurisée, conseils sur mesure, gestion de la puissance de charge.
-        </p>
-      </div>
-    </section>
-
-    <section id="realisations" class="gallery">
-      <h2>Nos Réalisations</h2>
-      <div class="images">
-        <img src="chantier1.jpg" alt="Installation 1" />
-        <img src="chantier2.jpg" alt="Installation 2" />
-        <img src="chantier3.jpg" alt="Installation 3" />
-      </div>
-    </section>
-
-    <section id="avis" class="avis">
-      <h2>Vos Avis</h2>
-      <div class="avis-fixes">
-        <p><strong>Sophie D. :</strong> Travail très professionnel et propre. Je recommande à 100% !</p>
-        <p><strong>Julien M. :</strong> Installation solaire rapide, équipe sérieuse et à l’écoute.</p>
-        <p><strong>Claire T. :</strong> Merci à Kelmia pour leur sérieux et leur accompagnement impeccable.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p><strong>Armand Poupeau</strong></p>
-      <p>Email : armandpoupeau17@gmail.com</p>
-      <p>Téléphone : 07 69 03 82 64</p>
-      <form>
-        <input type="text" placeholder="Nom" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
-  </main>
+  <h2 class="section-title">Avis clients</h2>
+  <section class="avis">
+    <blockquote>“Travail très professionnel, installation propre et équipe très sympa. Je recommande sans hésiter !”</blockquote>
+    <blockquote>“15 ans d’expérience qui se ressentent ! Merci pour votre écoute et vos conseils.”</blockquote>
+    <blockquote>“Service rapide, clair et efficace. La borne de recharge est parfaite.”</blockquote>
+  </section>
 
   <footer>
-    &copy; 2025 Kelmia Énergies. Tous droits réservés.
+    <p>
+      <a href="#contact">Contact</a> |
+      <a href="#realisations">Réalisations</a> |
+      <a href="#avis">Avis clients</a>
+    </p>
+    <p>&copy; 2025 Kelmia Énergies - Tous droits réservés</p>
   </footer>
+
+</body>
+</html>
 
   <script src="script.js"></script>
 </body>
