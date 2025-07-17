@@ -8,8 +8,11 @@
 </head>
 <body>
   <header>
-    <img src="logo-kelmia.png" alt="Logo Kelmia Énergies" class="logo" />
+    <div class="logo-container">
+      <img src="logo-kelmia.png" alt="Logo Kelmia Énergies" class="logo" />
+    </div>
     <nav>
+      <a href="#services">Nos Services</a>
       <a href="#realisations">Réalisations</a>
       <a href="#avis">Avis clients</a>
       <a href="#contact">Contact</a>
@@ -19,7 +22,43 @@
   <main>
     <section class="hero">
       <h1>Bienvenue chez Kelmia Énergies</h1>
-      <p>15 ans d’expérience en électricité générale, panneaux solaires, bornes de recharge, avec du matériel haut de gamme.</p>
+      <p>
+        Fort de plus de 15 ans d'expérience, Kelmia Énergies est votre spécialiste
+        en électricité générale, installations de panneaux solaires et bornes de recharge
+        pour véhicules électriques. Nous intervenons avec du matériel haut de gamme,
+        une expertise de confiance et un accompagnement sur mesure.
+      </p>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Nos Services</h2>
+
+      <div class="service">
+        <h3>⚡ Électricité générale</h3>
+        <p>
+          Nous réalisons tous vos travaux d’électricité pour le neuf et la rénovation :
+          installation de tableaux électriques, mise aux normes, éclairage intérieur et extérieur,
+          dépannage, domotique et plus encore. Travail soigné et matériel certifié.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>🔋 Panneaux solaires photovoltaïques</h3>
+        <p>
+          Profitez de l’énergie solaire avec nos installations de panneaux photovoltaïques sur toiture.
+          Nous vous accompagnons de l’étude à la pose en passant par le dimensionnement.
+          Rentabilité, économie d’énergie, et respect de l’environnement garantis.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>🚗 Bornes de recharge pour véhicules électriques</h3>
+        <p>
+          Nous installons des bornes de recharge à domicile ou en entreprise. Nos solutions
+          s’adaptent à tous les véhicules électriques et hybrides. Certification IRVE,
+          installation sécurisée, conseils sur mesure, gestion de la puissance de charge.
+        </p>
+      </div>
     </section>
 
     <section id="realisations" class="gallery">
@@ -33,12 +72,11 @@
 
     <section id="avis" class="avis">
       <h2>Vos Avis</h2>
-      <form id="avis-form">
-        <input type="text" name="nom" placeholder="Votre nom" required />
-        <textarea name="message" placeholder="Votre avis..." required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-      <div id="avis-list"></div>
+      <div class="avis-fixes">
+        <p><strong>Sophie D. :</strong> Travail très professionnel et propre. Je recommande à 100% !</p>
+        <p><strong>Julien M. :</strong> Installation solaire rapide, équipe sérieuse et à l’écoute.</p>
+        <p><strong>Claire T. :</strong> Merci à Kelmia pour leur sérieux et leur accompagnement impeccable.</p>
+      </div>
     </section>
 
     <section id="contact" class="contact">
